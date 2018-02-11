@@ -1,0 +1,25 @@
+{
+  "name": "ITukacija",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russcomin/ITukacija.git"
+  },
+  "keywords": [],
+  "author": "Jovan Belic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/russcomin/ITukacija/issues"
+  },
+  "homepage": "https://russcomin.github.io/ITukacija-web/",
+  "devDependencies": {
+    "node": "8.9.4",
+    "webpack": "^3.11.0"
+  }
+}
