@@ -6,7 +6,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "new:d": "./node_modules/node/bin/node ./node_modules/redux-cli/bin/redux.js g dumb",
+    "new:s": "./node_modules/node/bin/node ./node_modules/redux-cli/bin/redux.js g smart"
   },
   "repository": {
     "type": "git",
@@ -21,10 +23,19 @@
   "homepage": "https://russcomin.github.io/ITukacija-web/",
   "devDependencies": {
     "node": "8.9.4",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "redux-cli": "^1.9.0"
   },
   "dependencies": {
+    "immutable": "^3.8.2",
+    "prop-types": "^15.6.1",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-immutable": "^4.0.0",
+    "reselect": "^3.0.1"
   }
 }
