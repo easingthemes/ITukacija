@@ -5,7 +5,7 @@ import { Router, Route } from 'react-router-dom';
 import createHashHistory from 'history/createHashHistory';
 
 import configureStore from './store/configureStore';
-import App from './containers/App';
+import App from './containers/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
 const history = createHashHistory();
