@@ -1,6 +1,7 @@
 import { fromJS } from 'immutable';
-import { createStore, compose } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import { combineReducers } from 'redux-immutable';
+import thunkMiddleware from 'redux-thunk';
 
 import demoContainerReducer from '../containers/DemoContainer/reducer';
 
@@ -15,6 +16,7 @@ export default function configureStore() {
 		rootReducer,
 		initialState,
 		compose(
+      applyMiddleware(thunkMiddleware),
 			window.devToolsExtension ? window.devToolsExtension() : f => f
 		)
 	);
