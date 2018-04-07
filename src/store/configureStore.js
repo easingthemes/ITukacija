@@ -3,13 +3,11 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { combineReducers } from 'redux-immutable';
 import thunkMiddleware from 'redux-thunk';
 
-import demoContainerReducer from '../containers/DemoContainer/reducer';
+import reducers from './reducers';
 
 const initialState = fromJS({});
 
-const rootReducer = combineReducers({
-  demoPage: demoContainerReducer,
-});
+const rootReducer = combineReducers(reducers);
 
 export default function configureStore() {
 	const store = createStore(
