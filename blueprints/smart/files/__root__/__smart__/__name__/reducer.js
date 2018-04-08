@@ -5,7 +5,7 @@ import {
 } from './constants';
 
 const initialState = fromJS({
-  str: 0
+  str: '0'
 });
 
 function <%= camelEntityName %>Reducer(state = initialState, action) {

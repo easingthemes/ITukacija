@@ -9,7 +9,7 @@ import {
 
 class <%= pascalEntityName %> extends Component {
   componentDidMount() {
-  this.props.handleGetDemo(123);
+  this.props.handleGetDemo('123');
   }
 
   render() {
