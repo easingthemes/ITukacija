@@ -11,8 +11,8 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "new:d": "./node_modules/node/bin/node ./node_modules/redux-cli/bin/redux.js g dumb",
-    "new:s": "./node_modules/node/bin/node ./node_modules/redux-cli/bin/redux.js g smart"
+    "new:d": "npx redux g dumb",
+    "new:s": "npx redux g smart"
   },
   "repository": {
     "type": "git",
