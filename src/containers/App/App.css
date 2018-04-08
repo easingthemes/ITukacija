@@ -1,28 +1,204 @@
-.App {
-  text-align: center;
-}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("/assets/fonts/Roboto-Regular.ttf"); }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+@font-face {
+  font-family: Roboto-Black;
+  src: url(/assets/fonts/Roboto-Black.ttf); }
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(/assets/fonts/Roboto-Light.ttf); }
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(/assets/fonts/Roboto-Thin.ttf); }
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(/assets/fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: Somatic;
+  src: url(/assets/fonts/Somatic-Rounded.otf); }
+
+body {
+  background-color: #f5f5f5;
+  background-image: url(/assets/images/background-pattern.png); }
+
+.container {
+  max-width: 1024px; }
+  .container:after {
+    content: ' ';
+    display: block;
+    clear: both; }
+
+a {
+  text-decoration: none; }
+
+ul, li {
+  list-style-type: none; }
+
+input:focus {
+  outline: none; }
+
+/* APP */
+.left {
+  width: 512px;
+  height: 640px;
+  float: left; }
+  .left .button {
+    margin-left: 80px;
+    margin-top: 22px; }
+
+.right {
+  width: 512px;
+  height: 640px;
+  float: right; }
+
+.left p:first-child {
+  font-family: Somatic;
+  font-size: 32px;
+  letter-spacing: 1.4px;
+  color: #4fba6f;
+  margin-top: 190px;
+  margin-left: 80px; }
+
+.left p:nth-child(2) {
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: #bdbdbd;
+  margin-left: 80px;
+  margin-top: 22px;
+  line-height: 250%; }
+
+.form {
+  width: 342px;
+  height: 438px;
+  border-top: 3px solid #4fba6f;
+  float: left;
+  margin-top: 200px;
+  -webkit-box-shadow: 0px 12px 33px -6px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 12px 33px -6px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 12px 33px -6px rgba(0, 0, 0, 0.19);
+  margin-left: 50px;
+  background-color: white; }
+
+.form-holder {
+  width: 280px;
+  height: 400px;
+  margin: 0px auto;
+  margin-top: 38px; }
+
+.info {
+  width: 280px;
+  height: 44px;
+  border-left: 2px solid #4fba6f; }
+
+.info p {
+  font-family: Roboto-Regular;
+  font-size: 10px;
+  color: #acacac;
+  letter-spacing: 1.2px;
+  line-height: 220%;
+  margin-left: 10px; }
+
+.field {
+  width: 280px;
+  height: 90px;
+  float: left; }
+
+.field p:first-child {
+  font-family: Roboto-Bold;
+  font-size: 9px;
+  color: #a6a6a6;
+  letter-spacing: 1.6px; }
+
+.field input {
+  width: 260px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border-bottom: 3px solid #f2f2f1;
+  margin-top: 15px;
+  text-indent: 14px;
+  font-family: Roboto-Regular;
+  letter-spacing: 1.2px;
+  font-size: 11px; }
+
+.first-field {
+  margin-top: 30px; }
+
+.second-field {
+  margin-top: 15px; }
+
+.field input::-webkit-input-placeholder {
+  font-family: Roboto-Light;
+  font-size: 10px;
+  letter-spacing: .9px;
+  color: #b9b9b9; }
+
+#submit_login {
+  width: 137px;
+  height: 46px;
+  background-color: #4fba6f;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 3px solid #40985b;
+  font-family: Roboto-Bold;
+  font-size: 10px;
+  letter-spacing: 1.7px;
   color: white;
-}
+  margin-top: 25px;
+  cursor: pointer; }
 
-.App-title {
-  font-size: 1.5em;
-}
+#submit_login:hover {
+  transition: .4s;
+  opacity: .8;
+  border: none; }
 
-.App-intro {
-  font-size: large;
-}
+#modal {
+  position: absolute;
+  top: -400px;
+  left: 563px;
+  width: 342px;
+  height: 50px;
+  -webkit-box-shadow: 0px 12px 33px -8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 12px 33px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 12px 33px -8px rgba(0, 0, 0, 0.1);
+  background-color: white; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+#modal p {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 48px;
+  font-size: 14px; }
+
+#modal p:nth-child(1) {
+  margin-left: 20px;
+  font-family: Roboto-Bold;
+  font-size: 12px;
+  color: #e74c3c; }
+
+#modal p:nth-child(2) {
+  margin-left: 5px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  color: #bdc3c7;
+  letter-spacing: .7px; }
+
+#modal img {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: 14px;
+  margin-right: 20px;
+  opacity: .4;
+  cursor: pointer; }
