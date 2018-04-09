@@ -12,7 +12,8 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "new:d": "npx redux g dumb",
-    "new:s": "npx redux g smart"
+    "new:s": "npx redux g smart",
+    "version:node": "node -v && npm -v"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,7 @@
   },
   "homepage": "https://russcomin.github.io/ITukacija-web/",
   "devDependencies": {
-    "node": "8.9.4",
+    "node": "8.11.1",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "react-scripts": "1.1.4",
@@ -35,6 +36,7 @@
   "dependencies": {
     "history": "^4.7.2",
     "immutable": "^3.8.2",
+    "normalize.css": "^8.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",

@@ -85,33 +85,6 @@ input:focus { outline: none; }
 	line-height: 250%;
 }
 
-.left input {
-	transition: .22341s;
-	width: 154px;
-	height: 49px;
-	border: none;
-	border-radius: 5px;
-	background-color: #4fba6f;
-	color: white;
-	font-family: Roboto-Bold;
-	font-size: 10px;
-	letter-spacing: 1.7px;
-	margin-left: 80px;
-	margin-top: 22px;
-	cursor: pointer;
-	-webkit-box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.27);
-	-moz-box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.27);
-	box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.27);
-}
-
-.left input:hover {
-	transition: .42341s;
-	color: #4fba6f;
-	border: 2px solid #4fba6f;
-	background: none;
-	box-shadow: none;
-}
-
 .form {
 	width: 342px;
 	height: 438px;

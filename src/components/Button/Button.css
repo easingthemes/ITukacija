@@ -1,9 +1,8 @@
 .button {
-  display: inline-block;
-  text-decoration: none;
+  padding: 0 15px;
   border: 2px solid transparent;
   text-align: center;
-  transition: .22341s;
+  transition: .2s;
   width: 154px;
   height: 49px;
   border-radius: 5px;
@@ -13,15 +12,18 @@
   font-size: 10px;
   letter-spacing: 1.7px;
   cursor: pointer;
-  box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.27); }
-  .button:hover {
-    transition: .42341s;
+  box-shadow: 0 0 33px -1px rgba(0, 0, 0, 0.3); }
+  .button:hover, .button:focus {
+    transition: .5s;
     color: #4fba6f;
     border: 2px solid #4fba6f;
     background: none;
-    box-shadow: none; }
-  .button__label {
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
+    box-shadow: none;
+    outline: none; }
+  .button--link {
+    display: inline-block; }
+    .button--link .button__label {
+      display: block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }

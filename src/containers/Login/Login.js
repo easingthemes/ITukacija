@@ -31,25 +31,27 @@ class Login extends Component {
             route="/register"/>
         </div>
         <div className="right">
-          <div className="form">
+          <form className="form">
             <div className="form-holder">
               <div className="info">
                 <p>Molimo vas da popunite polja ispod kako <br />
                 biste pristupili vasem nalogu</p>
               </div>
-              <div className="field first-field">
-                <p>KORISNICKO IME</p>
-                <input type="text" id="korisnicko_ime"
-                       placeholder="Unesite vase ime..." />
+              <div className="form__row first-field">
+                <label className="label">KORISNICKO IME</label>
+                <input type="text" placeholder="Unesite vase ime..."
+                  className="field_input"/>
               </div>
-              <div className="field second-field">
-                <p>LOZINKA</p>
-                <input type="password" id="lozinka"
-                       placeholder="Unesite vasu lozinku..." />
+              <div className="form__row second-field">
+                <label className="label">LOZINKA</label>
+                <input type="password" placeholder="Unesite vasu lozinku..."
+                  className="field_input"/>
               </div>
-              <input type="button" id="submit_login" value="PRIJAVI SE" />
+              <Button
+                  label="PRIJAVI SE"
+                  handleClick={this.handleLogin}/>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     );

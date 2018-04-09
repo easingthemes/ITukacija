@@ -23,7 +23,9 @@ export class Button extends Component {
 
   renderLink() {
     return (
-      <a href={this.props.href} className='button'>
+      <a href={this.props.href}
+         className="button button--link"
+         target="_blank">
         {this.renderLabel()}
       </a>
     );
@@ -31,7 +33,7 @@ export class Button extends Component {
 
   renderLinkToRoute() {
     return (
-      <Link to={this.props.route} className='button'>
+      <Link to={this.props.route} className='button button--link'>
         {this.renderLabel()}
       </Link>
     );
@@ -58,7 +60,9 @@ export class Button extends Component {
 
 Button.propTypes = {
 	label: PropTypes.string,
-  handleClick: PropTypes.func
+  handleClick: PropTypes.func,
+  href: PropTypes.string,
+  route: PropTypes.string
 };
 
 Button.defaultProps = {
